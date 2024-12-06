@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deleteuser.DeleteUserController">
+   <children>
+      <VBox layoutY="57.0" prefHeight="354.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Patients" textFill="#2b2a2a">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Cases">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Appoinments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Users">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="129.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="58.0" prefWidth="631.0" style="-fx-background-color: #6C6C6C;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="125.0" layoutX="516.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WhatsApp_Image_2024-08-05_at_18.40.10_1f4ee407-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="215.0" layoutY="9.0" prefHeight="44.0" prefWidth="266.0" text="Delete User" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="58.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@name_hostpital-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userName" layoutX="287.0" layoutY="119.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField fx:id="email" layoutX="287.0" layoutY="159.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField fx:id="mobileNumber" layoutX="286.0" layoutY="200.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField fx:id="gender" layoutX="286.0" layoutY="238.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField fx:id="password" layoutX="286.0" layoutY="275.0" prefHeight="26.0" prefWidth="225.0" />
+      <TextField fx:id="confirm" layoutX="286.0" layoutY="314.0" prefHeight="26.0" prefWidth="226.0" />
+      <Button fx:id="delete" layoutX="428.0" layoutY="365.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #008631;" text="Delete" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancle" layoutX="300.0" layoutY="365.0" mnemonicParsing="false" onAction="#cancle" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #D1001F;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="183.0" layoutY="123.0" prefHeight="18.0" prefWidth="84.0" text="User Name" />
+      <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="183.0" layoutY="163.0" prefHeight="18.0" prefWidth="92.0" text="Email" />
+      <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="183.0" layoutY="204.0" prefHeight="18.0" prefWidth="84.0" text="Mobile Number" />
+      <Label alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="151.0" layoutY="242.0" prefHeight="18.0" prefWidth="69.0" text="Gender" />
+      <Label contentDisplay="CENTER" layoutX="178.0" layoutY="279.0" prefHeight="18.0" prefWidth="122.0" text="Password" />
+      <Label contentDisplay="CENTER" layoutX="178.0" layoutY="326.0" prefHeight="18.0" prefWidth="69.0" text="Confirm" />
+      <Line endX="157.4000244140625" endY="95.59999084472656" layoutX="15.0" layoutY="15.0" startX="562.199951171875" startY="95.59999084472656" />
+      <TextField fx:id="username" layoutX="239.0" layoutY="69.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="userId" layoutX="451.0" layoutY="69.0" prefHeight="26.0" prefWidth="101.0" />
+      <Label contentDisplay="CENTER" layoutX="160.0" layoutY="73.0" prefHeight="18.0" prefWidth="76.0" text="User Name" />
+      <Label contentDisplay="CENTER" layoutX="390.0" layoutY="73.0" prefHeight="18.0" prefWidth="76.0" text="User ID " />
+      <Button fx:id="search" layoutX="565.0" layoutY="70.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #008631;" text="Search" textFill="WHITE" />
+      <Label fx:id="errorMessage" contentDisplay="CENTER" layoutX="311.0" layoutY="340.0" prefHeight="18.0" prefWidth="171.0" text=" " />
+   </children>
+</AnchorPane>

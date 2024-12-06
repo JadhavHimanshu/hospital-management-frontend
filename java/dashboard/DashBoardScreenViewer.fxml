@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashBoardController">
+   <children>
+      <VBox layoutY="58.0" prefHeight="342.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;">
+         <children>
+            <Button fx:id="addPatientButton" alignment="CENTER" mnemonicParsing="false" onAction="#ClickOnPatientButton" prefHeight="38.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Patients" textFill="#2b2a2a">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button  fx:id="addCaseButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ClickOnCasetButton" prefHeight="37.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Cases">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addAppointmentButton" alignment="CENTER" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#ClickOnAppointmentsButton" prefHeight="43.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Appoinments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button   fx:id="addUserButton" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#ClickOnUserButton" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Users">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" layoutX="10.0" layoutY="129.0" mnemonicParsing="false" onAction="#ClickOnLogoutButton" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: #6C6C6C;">
+         <children>
+            <Label layoutX="173.0" layoutY="7.0" prefHeight="44.0" prefWidth="266.0" text="DashBoard" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="125.0" layoutX="516.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WhatsApp_Image_2024-08-05_at_18.40.10_1f4ee407-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="58.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@name_hostpital-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

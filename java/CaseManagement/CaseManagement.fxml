@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CaseManagement.CaseManagementController">
+   <children>
+      <VBox layoutY="58.0" prefHeight="342.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="38.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Patients" textFill="#2b2a2a">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Cases">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Appoinments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Users">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="129.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="146.0" style="-fx-background-color: #FF9E2C;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: #6C6C6C;">
+         <children>
+            <Label layoutX="173.0" layoutY="7.0" prefHeight="44.0" prefWidth="266.0" text="Case Management" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="125.0" layoutX="516.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WhatsApp_Image_2024-08-05_at_18.40.10_1f4ee407-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="58.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@name_hostpital-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addCase" layoutX="196.0" layoutY="95.0" mnemonicParsing="false" onAction="#addCase" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #FF9E2C;" text="Add Case">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="editCase" layoutX="196.0" layoutY="144.0" mnemonicParsing="false" onAction="#editCase" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #FF9E2C;" text="Edit Case">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteCase" layoutX="196.0" layoutY="187.0" mnemonicParsing="false" onAction="#deleteCase" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #FF9E2C;" text="Delete Case">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchCase" layoutX="196.0" layoutY="229.0" mnemonicParsing="false" onAction="#searchCase" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #FF9E2C;" text="Search Case">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
